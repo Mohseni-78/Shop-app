@@ -6,7 +6,7 @@
   direction: rtl;
 }
 @media (max-width: 768px) {
-  * {
+  *{
     overflow: hidden;
   }
 }
