@@ -104,15 +104,14 @@
   padding: 5px 10px;
   border-radius: 10px;
   color: #fff;
+  background-color: #1fbd2c !important;
 }
 .removeBtn img {
   width: 25px;
   height: 25px;
   background: none;
 }
-.addBtn {
-  background-color: #1fbd2c;
-}
+
 .count {
   display: flex;
   justify-content: center;
