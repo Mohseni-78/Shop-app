@@ -2,12 +2,12 @@ import React from "react";
 import { Navigate, Route, Routes } from "react-router-dom";
 
 //                     Components
-import SignUp from "./components/SignUp";
-import SignIn from "./components/SignIn";
-import Cart from "./components/Cart";
-import ProductDetail from "./components/ProductDetail";
+import SignUp from "./components/signin/SignUp";
+import SignIn from "./components/signin/SignIn";
+import Cart from "./components/cart/Cart";
+import ProductDetail from "./components/productDetail/ProductDetail";
 import AboutUs from "./components/AboutUs";
-import Products from "./components/Products";
+import Products from "./components/products/Products";
 import NotFound from "./components/shared/NotFound";
 
 import Layout from "./components/Layout";

@@ -1,9 +1,9 @@
 import React from 'react';
 import styles from "./Footer.module.css"
-import instagram from "../assets/svg/instagram.svg"
-import twitter from "../assets/svg/twitter.svg"
-import facebook from "../assets/svg/facebook.svg"
-import telegram from "../assets/svg/telegram.svg"
+import instagram from "../../assets/svg/instagram.svg"
+import twitter from "../../assets/svg/twitter.svg"
+import facebook from "../../assets/svg/facebook.svg"
+import telegram from "../../assets/svg/telegram.svg"
 
 const Footer = () => {
     return (

@@ -3,10 +3,10 @@ import React, { useContext } from "react";
 import styles from "./Products.module.css"
 
 //                Shared Components
-import Product from "./shared/Product";
+import Product from "../shared/product/Product";
 
 //                        Contexts
-import { ProductContext } from "../contexts/ProductContextProvider";
+import { ProductContext } from "../../contexts/ProductContextProvider";
 
 const Products = () => {
   const data = useContext(ProductContext);

@@ -1,7 +1,7 @@
 import React, { useContext } from "react";
 import { Link } from "react-router-dom";
-import { cartContext } from "../contexts/CartContextProvider";
-import ProCart from "./shared/ProCart";
+import { cartContext } from "../../contexts/CartContextProvider";
+import ProCart from "../shared/proCart/ProCart";
 import styles from "./Cart.module.css";
 
 const Cart = () => {
@@ -18,7 +18,7 @@ const Cart = () => {
        
 
         {state.itemCounter > 0 ? (
-          <div>
+          <div className={styles.btnGroup}>
             <button onClick={() => dispatch({ type: "CLEAR" })}>
               خالی کردن سبد خرید
             </button>
@@ -33,7 +33,7 @@ const Cart = () => {
 <div className={styles.message}>
           {state.clear && state.itemCounter === 0 && (
             <div>
-              <h1>سبد خرید شما خالی است</h1>
+              <h2>سبد خرید شما خالی است</h2>
               <Link to="/products">میخوای خرید انجام بدی؟</Link>
             </div>
           )}

@@ -15,5 +15,9 @@ const shorten = (title) => {
   const newTitle = title.split(" ")[0];
   return newTitle;
 };
+const shortenDes = (des) => {
+  const newDes = des.split(". ");
+  return newDes;
+};
 
-export { isInCart, quantityCount, shorten };
+export { isInCart, quantityCount, shorten,shortenDes };

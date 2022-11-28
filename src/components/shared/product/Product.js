@@ -1,10 +1,10 @@
 import React, { useContext } from "react";
-import { cartContext } from "../../contexts/CartContextProvider";
+import { cartContext } from "../../../contexts/CartContextProvider";
 import styles from "./Product.module.css";
-import { isInCart , quantityCount, shorten} from "../../helper/functions";
+import { isInCart , quantityCount, shorten} from "../../../helper/functions";
 import { Link } from "react-router-dom";
-import arrow from "../../assets/svg/arrow.svg"
-import trash from "../../assets/svg/trash.svg"
+import arrow from "../../../assets/svg/arrow.svg"
+import trash from "../../../assets/svg/trash.svg"
 
 const Product = ({ ProductData }) => {
   const {state,dispatch} = useContext(cartContext);

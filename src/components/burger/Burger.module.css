@@ -18,5 +18,7 @@
 @media (max-width: 768px) {
   .container {
     display: block;
+    cursor: pointer;
+    position: fixed;
   }
 }

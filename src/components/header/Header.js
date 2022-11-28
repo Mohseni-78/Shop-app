@@ -1,15 +1,15 @@
 import React, { useContext, useEffect, useState } from "react";
 import { Link } from "react-router-dom";
 
-import Burger from "./Burger";
+import Burger from "../burger/Burger";
 
 import styles from "./Header.module.css";
 
-import picHeader from "../assets/images/pic-header.png";
-import cart from "../assets/svg/cart.svg";
+import picHeader from "../../assets/images/pic-header.png";
+import cart from "../../assets/svg/cart.svg";
 
 // Contexts
-import { cartContext } from "../contexts/CartContextProvider";
+import { cartContext } from "../../contexts/CartContextProvider";
 
 const Header = () => {
   const [element, setElement] = useState("home");
@@ -97,41 +97,6 @@ const Header = () => {
               <Link to="aboutUs" onClick={clickHandler}>
                 درباره ما
               </Link>
-              <ul className={styles.productDetails}>
-                <li>
-                  <a
-                    href="1"
-                    onClick={clickHandlerDetails}
-                    id="proOne"
-                    className={element === "proOne" ? styles.activeDetails : ""}
-                  >
-                    محصولات اول
-                  </a>
-                </li>
-                <li>
-                  <a
-                    href="2"
-                    onClick={clickHandlerDetails}
-                    id="proTwo"
-                    className={element === "proTwo" ? styles.activeDetails : ""}
-                  >
-                    محصولات دوم
-                  </a>
-                </li>
-                <li>
-                  <a
-                    href="3"
-                    onClick={clickHandlerDetails}
-                    id="proThree"
-                    className={
-                      element === "proThree" ? styles.activeDetails : ""
-                    }
-                  >
-                    {" "}
-                    محصولات سوم
-                  </a>
-                </li>
-              </ul>
             </li>
 
             <li
@@ -194,7 +159,7 @@ const Header = () => {
         </nav>
 
         <div className={styles.information}>
-          <h1>آنلاین شاپ بوتواستارت</h1>
+          <h1>آنلاین شاپ </h1>
           <p>
             لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ و با
             استفاده از طراحان گرافیک است چاپگرها و متون بلکه روزنامه و مجله در
