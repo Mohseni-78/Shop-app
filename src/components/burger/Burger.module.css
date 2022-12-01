@@ -21,4 +21,7 @@
     cursor: pointer;
     position: fixed;
   }
+  .container div:nth-child(1) {
+    margin-top: 5px !important;
+  }
 }

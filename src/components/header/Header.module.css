@@ -232,31 +232,38 @@ nav {
     flex-direction: column;
     border-radius: 10px;
     background: rgba(255, 255, 255, 0.01);
+    
   }
   .menu > li {
     border: 0;
     padding: 10px 0;
+    
     width: 150px;
   }
   .menu > li.active {
     box-shadow: 0 0 0 0;
-    border-right: 1px solid rgb(25, 0, 255);
+    border-right: 1px double rgb(25, 0, 255);
+    border-radius: 50%;
   }
   .menu > li:last-child:hover {
     animation: cart2 1s alternate-reverse infinite;
+    
   }
   .menu > li ul {
     right: 150px;
     top: 0;
     width: 170px;
     display: flex;
+
     /* flex-wrap: wrap; */
   }
   .menu > li ul a {
     font-size: 13px;
+
   }
   .menu li:hover ul {
     animation: swingdown2 1s ease;
+
   }
 }
 
